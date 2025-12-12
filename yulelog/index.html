@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Aragona Yule Log 4K</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      background: black;
+      overflow: hidden;
+    }
+
+    .video-container {
+      width: 100%;
+      height: 100%;
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+
+    video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border: none;
+    }
+
+    .logo-overlay {
+      position: fixed;
+      bottom: 2.5%;
+      right: 2.5%;
+      width: 14%;
+      max-width: 260px;
+      opacity: 0.75; /* subtle */
+      z-index: 10;
+      pointer-events: none;
+    }
+
+    @media (max-width: 800px) {
+      .logo-overlay {
+        width: 24%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="video-container">
+    <video
+      src="../yule-log-4k.mp4"
+      autoplay
+      muted
+      loop
+      playsinline
+    ></video>
+  </div>
+
+  <img class="logo-overlay" src="../aragona-logo.png" alt="Aragona Properties">
+
+</body>
+</html>
